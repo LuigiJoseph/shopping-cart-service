@@ -1,38 +1,54 @@
 package com.luigijoseph.shoppingcartservice.domain;
 
-import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ShoppingCart {
-    private ArrayList<CartItem> items;
-    private double totalPrice;
+    private Map<Product, Integer> items; // Product as key, quantity as value
+    private Store store;
 
-    public ShoppingCart() {}
-
-    public void emptyCart(){
-        items = new ArrayList<>();
+    public ShoppingCart(Store store) {
+        this.store = store;
+        this.items = new HashMap<>();
     }
 
-    public void deleteItem(CartItem item){
-        items.remove(item);
+    public void emptyCart() {
+        items.clear();
     }
 
-    public void updateQuantity(CartItem item, int quantity){
-        item.setQuantity(quantity);
+    public void deleteItem(Product product) {
+        items.remove(product);
     }
 
-    public void addItem(CartItem item){
-        items.add(item);
+    public void updateQuantity(Product product, int quantity) {
+        if (quantity <= 0) {
+            deleteItem(product);
+        } else {
+            items.put(product, quantity);
+        }
     }
 
-    public ArrayList<CartItem> getItems(){
+    public void addItem(Product product, int quantity) {
+        if (store.getProductById(product.getProductId()) == null) {
+            throw new IllegalArgumentException("Product not found in the store");
+        }
+        if (!store.checkStock(product, quantity)) {
+            throw new IllegalStateException("Insufficient stock for product: " + product.getProductName());
+        }
+        items.put(product, items.getOrDefault(product, 0) + quantity);
+    }
+
+    public Map<Product, Integer> getItems() {
         return items;
     }
 
-    public double getTotalPrice(){
-        return totalPrice;
-    }
-
-    public void payCart(CartItem item){
-
+    public void payCart() {
+        for (Map.Entry<Product, Integer> entry : items.entrySet()) {
+            Product product = entry.getKey();
+            int quantity = entry.getValue();
+            store.updateStock(product, -quantity); // Deduct stock from store
+        }
+        emptyCart();
+        System.out.println("Cart payment successful. Thank you for your purchase!");
     }
 }
