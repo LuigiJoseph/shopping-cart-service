@@ -2,6 +2,7 @@ package com.luigijoseph.shoppingcartservice.domain;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.NoSuchElementException;
 
 public class ShoppingCart {
     private Map<Product, Integer> items; // Product as key, quantity as value
@@ -29,16 +30,19 @@ public class ShoppingCart {
     }
 
     public void addItem(Product product, int quantity) {
-        if (store.getProductById(product.getProductId()) == null) {
-            throw new IllegalArgumentException("Product not found in the store");
+        try {
+            Product storeProduct = store.getProductById(product.getProductId());
+            if (!store.checkStock(storeProduct, quantity)) {
+                throw new IllegalStateException("Insufficient stock for product: " + storeProduct.getProductName());
+            }
+            items.put(storeProduct, items.getOrDefault(storeProduct, 0) + quantity);
+        } catch (NoSuchElementException e) {
+            throw new IllegalArgumentException("Product not found in the store", e);
         }
-        if (!store.checkStock(product, quantity)) {
-            throw new IllegalStateException("Insufficient stock for product: " + product.getProductName());
-        }
-        items.put(product, items.getOrDefault(product, 0) + quantity);
     }
 
-    public Map<Product, Integer> getItems() {
+
+    public Map<Product, Integer> getItemsInCart() {
         return items;
     }
 

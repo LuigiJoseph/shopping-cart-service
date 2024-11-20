@@ -45,7 +45,7 @@ public class App {
     }
 
     private static void printCart(ShoppingCart cart) {
-        for (Map.Entry<Product, Integer> entry : cart.getItems().entrySet()) {
+        for (Map.Entry<Product, Integer> entry : cart.getItemsInCart().entrySet()) {
             Product product = entry.getKey();
             int quantity = entry.getValue();
             System.out.println(product.getProductName() + " - Quantity: " + quantity +

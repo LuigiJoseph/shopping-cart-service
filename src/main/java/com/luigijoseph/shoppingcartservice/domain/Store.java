@@ -45,6 +45,8 @@ public class Store {
         throw new NoSuchElementException("No product found with ID " + productId);
     }
 
+
+
     public boolean checkStock(Product product, int quantity) {
         return product.getProductStock() >= quantity;
     }
