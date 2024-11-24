@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd3c2b5f-9de9-49d8-8a2e-fd6c541f8441" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/application/services/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/application/services/StoreService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/entities/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/entities/ShoppingCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/entities/Store.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/exceptions/InsufficientStockException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/exceptions/ProductNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingCartService/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingCartService/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingCartService/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingCartService/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingCartService/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingCartService/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingCartService/src/main/java/org/luigijoseph/shoppingcartservice/ShoppingCartServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingCartService/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingCartService/src/test/java/org/luigijoseph/shoppingcartservice/ShoppingCartServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/ShoppingCartServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/application/services/ShoppingCartServiceApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +23,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Python Script" />
+        <option value="Exception" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -140,7 +140,7 @@
     <configuration name="ShoppingCartServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="shopping-cart-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.luigijoseph.shoppingcartservice.ShoppingCartServiceApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.luigijoseph.shoppingcartservice.application.services.ShoppingCartServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -189,7 +189,7 @@
       <updated>1731924994809</updated>
       <workItem from="1731924995840" duration="22758000" />
       <workItem from="1732098815876" duration="23970000" />
-      <workItem from="1732449127793" duration="310000" />
+      <workItem from="1732449127793" duration="3619000" />
     </task>
     <servers />
   </component>
