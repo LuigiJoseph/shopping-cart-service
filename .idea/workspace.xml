@@ -5,21 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd3c2b5f-9de9-49d8-8a2e-fd6c541f8441" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luigijoseph/shoppingcartservice/app/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luigijoseph/shoppingcartservice/domain/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luigijoseph/shoppingcartservice/domain/ShoppingCart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luigijoseph/shoppingcartservice/domain/Store.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/luigijoseph/shoppingcartservice/domain/ShoppingCartTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/luigijoseph/shoppingcartservice/domain/StoreTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingCartService/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingCartService/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingCartService/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingCartService/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingCartService/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingCartService/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingCartService/src/main/java/org/luigijoseph/shoppingcartservice/ShoppingCartServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingCartService/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingCartService/src/test/java/org/luigijoseph/shoppingcartservice/ShoppingCartServiceApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +58,7 @@
     "full.screen.before.presentation.mode": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Windows memory/git/shopping-cart-service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -71,7 +67,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -141,6 +137,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShoppingCartServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="shopping-cart-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.luigijoseph.shoppingcartservice.ShoppingCartServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Python tests in test" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="shopping-cart-service" />
       <option name="ENV_FILES" value="" />
@@ -185,6 +189,7 @@
       <updated>1731924994809</updated>
       <workItem from="1731924995840" duration="22758000" />
       <workItem from="1732098815876" duration="23970000" />
+      <workItem from="1732449127793" duration="310000" />
     </task>
     <servers />
   </component>
@@ -201,6 +206,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
