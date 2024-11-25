@@ -22,7 +22,11 @@ public class ShoppingCartImpl implements ShoppingCartInterface {
         // Add product to the cart
         for (int i = 0; i < quantity; i++) {
             cart.addProduct(product);
+
         }
+
+        product.setStock(product.getStock() - quantity);
+
     }
 
     public void removeProductFromCart(Long productId){
