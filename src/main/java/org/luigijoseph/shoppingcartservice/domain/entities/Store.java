@@ -1,10 +1,13 @@
 package org.luigijoseph.shoppingcartservice.domain.entities;
 
 import jakarta.persistence.*;
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@Component
 public class Store {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

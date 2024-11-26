@@ -2,7 +2,7 @@ package org.luigijoseph.shoppingcartservice.application.services.implementation;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.luigijoseph.shoppingcartservice.domain.services.ShoppingCartImpl;
+import org.luigijoseph.shoppingcartservice.domain.services.Implementations.ShoppingCartImpl;
 import org.luigijoseph.shoppingcartservice.domain.entities.Product;
 import org.luigijoseph.shoppingcartservice.domain.entities.Store;
 import org.luigijoseph.shoppingcartservice.domain.entities.ShoppingCart;

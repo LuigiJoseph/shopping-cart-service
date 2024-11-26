@@ -1,9 +1,14 @@
-package org.luigijoseph.shoppingcartservice.domain.services;
+package org.luigijoseph.shoppingcartservice.domain.services.Implementations;
 
 import org.luigijoseph.shoppingcartservice.domain.entities.Product;
 import org.luigijoseph.shoppingcartservice.domain.entities.ShoppingCart;
 import org.luigijoseph.shoppingcartservice.domain.entities.Store;
+import org.luigijoseph.shoppingcartservice.domain.services.ShoppingCartInterface;
+import org.springframework.stereotype.Service;
 
+import java.util.List;
+
+@Service
 public class ShoppingCartImpl implements ShoppingCartInterface {
 
     private final ShoppingCart cart;
@@ -32,6 +37,10 @@ public class ShoppingCartImpl implements ShoppingCartInterface {
         product.setStock(product.getStock() - quantity);
 
     }
+    @Override
+    public ShoppingCart getCart() {
+        return this.cart; // Return the current shopping cart
+    }
 
     public void removeProductFromCart(Long productId){
         Product product = store.getProductById(productId);
@@ -51,4 +60,12 @@ public class ShoppingCartImpl implements ShoppingCartInterface {
         return total;
     }
 
+    @Override
+    public void clearCart() {
+        cart.removeAllProducts();
+    }
+
+    public Product searchProductById(Long productId);
+
+    public List<Product> searchProductsByName(String keyword);
 }
