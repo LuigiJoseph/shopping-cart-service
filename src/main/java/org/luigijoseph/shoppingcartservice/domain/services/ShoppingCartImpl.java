@@ -1,4 +1,4 @@
-package org.luigijoseph.shoppingcartservice.application.services;
+package org.luigijoseph.shoppingcartservice.domain.services;
 
 import org.luigijoseph.shoppingcartservice.domain.entities.Product;
 import org.luigijoseph.shoppingcartservice.domain.entities.ShoppingCart;
@@ -6,10 +6,14 @@ import org.luigijoseph.shoppingcartservice.domain.entities.Store;
 
 public class ShoppingCartImpl implements ShoppingCartInterface {
 
-    private static final ShoppingCart cart = new ShoppingCart();  // Instance of ShoppingCart entity
-    private static final Store store = new Store();                   //A place holder for now, place with repository later
+    private final ShoppingCart cart;
+    private final Store store;
 
 
+    public ShoppingCartImpl(Store store) {
+        this.cart = new ShoppingCart();
+        this.store = store;
+    }
     @Override
     public void addProductToCart(Long productId, int quantity){
         //Get the product from store

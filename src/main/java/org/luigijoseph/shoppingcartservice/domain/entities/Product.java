@@ -15,12 +15,13 @@ public class Product {
     private double price;
     private double tax;
     private String name;
+    private String description;
 
     //Needed for JPA
     public Product() {}
 
 
-    public Product(Long id, int stock, double price, double tax, String name) {
+    public Product(Long id, int stock, double price, double tax, String name, String description) {
         this.id = id;
         this.stock = stock;
         this.price = price;
@@ -86,6 +87,13 @@ public class Product {
         this.name = name;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
     @Override
     public String toString() {

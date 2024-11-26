@@ -1,16 +1,13 @@
-package org.luigijoseph.shoppingcartservice.application.services.implementation;
+package org.luigijoseph;
 
-import org.luigijoseph.shoppingcartservice.application.services.ShoppingCartInterface;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@SpringBootApplication
-public class ShoppingCartServiceApplication extends ShoppingCartInterface {
-	void addProductToCart(Long productId, int quantity);{}
-
-	void removeProductFromCart(Long productId);
-
-	double checkoutCart();
+@SpringBootApplication(scanBasePackages = "org.luigijoseph.shoppingcartservice")
+@EnableJpaRepositories("org.luigijoseph.shoppingcartservice.domain.repository")
+public class ShoppingCartServiceApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ShoppingCartServiceApplication.class, args);

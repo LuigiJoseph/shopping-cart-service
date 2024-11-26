@@ -1,4 +1,4 @@
-package org.luigijoseph.shoppingcartservice.application.services;
+package org.luigijoseph.shoppingcartservice.domain.services;
 
 public interface ShoppingCartInterface {
     public void addProductToCart(Long productId, int quantity);

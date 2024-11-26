@@ -5,15 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd3c2b5f-9de9-49d8-8a2e-fd6c541f8441" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/application/services/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/application/services/StoreService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/entities/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/entities/ShoppingCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/entities/Store.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/exceptions/InsufficientStockException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/exceptions/ProductNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/controllers/CartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/controllers/StoreController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/luigijoseph/shoppingcartservice/integration/CartRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/luigijoseph/shoppingcartservice/integration/ProductRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/luigijoseph/shoppingcartservice/integration/StoreRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/ShoppingCartServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/application/services/ShoppingCartServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/luigijoseph/ShoppingCartServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/ShoppingCartServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/application/services/ShoppingCartImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/services/ShoppingCartImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/application/services/ShoppingCartInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/services/ShoppingCartInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/entities/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/entities/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/entities/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/infrastructure/persistence/CartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/repository/CartRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/infrastructure/persistence/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/infrastructure/persistence/StoreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/repository/StoreRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/infrastructure/rest/CartController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/infrastructure/rest/StoreController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/luigijoseph/shoppingcartservice/application/services/implementation/ShoppingCartImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/luigijoseph/shoppingcartservice/application/services/implementation/ShoppingCartImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +35,7 @@
       <list>
         <option value="Python Script" />
         <option value="Exception" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -48,17 +59,33 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.App.executor": "Run",
+    "JUnit.CartRepositoryTest.executor": "Run",
+    "JUnit.CartRepositoryTest.testSaveAndFindCart.executor": "Coverage",
+    "JUnit.ProductRepositoryTest.executor": "Run",
+    "JUnit.ProductRepositoryTest.testSaveAndRetrieveProduct.executor": "Debug",
+    "JUnit.ShoppingCartImplTest.checkOut.executor": "Run",
+    "JUnit.ShoppingCartImplTest.executor": "Run",
+    "JUnit.ShoppingCartImplTest.removeProductFromCart.executor": "Run",
+    "JUnit.ShoppingCartImplTest.testAddProduct.executor": "Run",
+    "JUnit.ShoppingCartServiceApplicationTests.executor": "Run",
     "JUnit.ShoppingCartTest.executor": "Run",
     "JUnit.ShoppingCartTest.testInsufficientStock.executor": "Run",
+    "JUnit.StoreRepositoryTest.executor": "Debug",
+    "JUnit.StoreRepositoryTest.testSaveAndRetrieveStore.executor": "Debug",
     "JUnit.StoreTests.executor": "Run",
     "JUnit.StoreTests.testSetStock.executor": "Run",
     "JUnit.com.luigijoseph.shoppingcartservice.domain in shopping-cart-service.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ShoppingCartServiceApplication.executor": "Run",
     "full.screen.before.presentation.mode": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Windows memory/git/shopping-cart-service",
+    "last_opened_file_path": "C:/Users/Windows memory/git/shopping-cart-service/src/test/java/org/luigijoseph/shoppingcartservice/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -67,72 +94,95 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Windows memory\git\shopping-cart-service\src\test\java\org\luigijoseph\shoppingcartservice\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Windows memory\git\shopping-cart-service\src\main\resources" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.luigijoseph" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.com.luigijoseph.shoppingcartservice.domain in shopping-cart-service">
-    <configuration name="ShoppingCartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.ShoppingCartServiceApplication">
+    <configuration name="CartRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shopping-cart-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.luigijoseph.shoppingcartservice.domain.*" />
+          <option name="PATTERN" value="org.luigijoseph.shoppingcartservice.integration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.luigijoseph.shoppingcartservice.domain" />
-      <option name="MAIN_CLASS_NAME" value="com.luigijoseph.shoppingcartservice.domain.ShoppingCartTest" />
+      <option name="PACKAGE_NAME" value="org.luigijoseph.shoppingcartservice.integration" />
+      <option name="MAIN_CLASS_NAME" value="org.luigijoseph.shoppingcartservice.integration.CartRepositoryTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShoppingCartTest.testInsufficientStock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductRepositoryTest.testSaveAndRetrieveProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shopping-cart-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.luigijoseph.shoppingcartservice.domain.*" />
+          <option name="PATTERN" value="org.luigijoseph.shoppingcartservice.integration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.luigijoseph.shoppingcartservice.domain" />
-      <option name="MAIN_CLASS_NAME" value="com.luigijoseph.shoppingcartservice.domain.ShoppingCartTest" />
-      <option name="METHOD_NAME" value="testInsufficientStock" />
+      <option name="PACKAGE_NAME" value="org.luigijoseph.shoppingcartservice.integration" />
+      <option name="MAIN_CLASS_NAME" value="org.luigijoseph.shoppingcartservice.integration.ProductRepositoryTest" />
+      <option name="METHOD_NAME" value="testSaveAndRetrieveProduct" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StoreTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShoppingCartServiceApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shopping-cart-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="domain.*" />
+          <option name="PATTERN" value="org.luigijoseph.shoppingcartservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="domain" />
-      <option name="MAIN_CLASS_NAME" value="domain.StoreTests" />
+      <option name="PACKAGE_NAME" value="org.luigijoseph.shoppingcartservice" />
+      <option name="MAIN_CLASS_NAME" value="org.luigijoseph.shoppingcartservice.ShoppingCartServiceApplicationTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.luigijoseph.shoppingcartservice.domain in shopping-cart-service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StoreRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shopping-cart-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.luigijoseph.shoppingcartservice.domain.*" />
+          <option name="PATTERN" value="org.luigijoseph.shoppingcartservice.integration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.luigijoseph.shoppingcartservice.domain" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="org.luigijoseph.shoppingcartservice.integration" />
+      <option name="MAIN_CLASS_NAME" value="org.luigijoseph.shoppingcartservice.integration.StoreRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StoreRepositoryTest.testSaveAndRetrieveStore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shopping-cart-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.luigijoseph.shoppingcartservice.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.luigijoseph.shoppingcartservice.integration" />
+      <option name="MAIN_CLASS_NAME" value="org.luigijoseph.shoppingcartservice.integration.StoreRepositoryTest" />
+      <option name="METHOD_NAME" value="testSaveAndRetrieveStore" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,34 +190,18 @@
     <configuration name="ShoppingCartServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="shopping-cart-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.luigijoseph.shoppingcartservice.application.services.ShoppingCartServiceApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.luigijoseph.ShoppingCartServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Python tests in test" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="shopping-cart-service" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/src/test&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.com.luigijoseph.shoppingcartservice.domain in shopping-cart-service" />
-        <item itemvalue="JUnit.ShoppingCartTest" />
-        <item itemvalue="JUnit.ShoppingCartTest.testInsufficientStock" />
-        <item itemvalue="Python tests.Python tests in test" />
-        <item itemvalue="JUnit.StoreTests" />
+        <item itemvalue="JUnit.ShoppingCartServiceApplicationTests" />
+        <item itemvalue="JUnit.StoreRepositoryTest" />
+        <item itemvalue="JUnit.ProductRepositoryTest.testSaveAndRetrieveProduct" />
+        <item itemvalue="JUnit.CartRepositoryTest" />
+        <item itemvalue="JUnit.StoreRepositoryTest.testSaveAndRetrieveStore" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +223,9 @@
       <updated>1731924994809</updated>
       <workItem from="1731924995840" duration="22758000" />
       <workItem from="1732098815876" duration="23970000" />
-      <workItem from="1732449127793" duration="3619000" />
+      <workItem from="1732449127793" duration="4476000" />
+      <workItem from="1732464654053" duration="151000" />
+      <workItem from="1732464811897" duration="32789000" />
     </task>
     <servers />
   </component>
@@ -212,8 +248,39 @@
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/luigijoseph/shoppingcartservice/integration/ProductRepositoryTest.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/luigijoseph/shoppingcartservice/integration/ProductRepositoryTest.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/luigijoseph/ShoppingCartServiceApplication.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.luigijoseph.shoppingcartservice.integration.ProductRepositoryTest" memberName="productRepository" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/shopping_cart_service$CartRepositoryTest_testSaveAndFindCart.ic" NAME="CartRepositoryTest.testSaveAndFindCart Coverage Results" MODIFIED="1732603402068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>org.luigijoseph.shoppingcartservice.integration.*</FILTER>
+    </SUITE>
   </component>
 </project>

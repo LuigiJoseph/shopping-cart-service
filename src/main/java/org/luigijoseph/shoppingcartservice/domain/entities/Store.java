@@ -18,6 +18,10 @@ public class Store {
     public Store() {
     }
 
+    public Long getId() {
+        return id;
+    }
+
     // Inventory management methods
 
     public List<Product> getProducts() {
