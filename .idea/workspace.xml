@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd3c2b5f-9de9-49d8-8a2e-fd6c541f8441" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/controllers/dto/AddProductRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/services/Implementations/StoreImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/services/StoreInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/initializer/StoreInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/controllers/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/controllers/CartController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/controllers/StoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/controllers/StoreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/entities/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/entities/ShoppingCart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/entities/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/entities/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/services/ShoppingCartImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/services/Implementations/ShoppingCartImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/services/ShoppingCartInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/services/ShoppingCartInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/luigijoseph/shoppingcartservice/application/services/implementation/ShoppingCartImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/luigijoseph/shoppingcartservice/application/services/implementation/ShoppingCartImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/services/Implementations/ShoppingCartImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/luigijoseph/shoppingcartservice/domain/services/Implementations/ShoppingCartImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +98,7 @@
       <recent name="org.luigijoseph" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.java in shopping-cart-service">
+  <component name="RunManager" selected="Spring Boot.ShoppingCartServiceApplication">
     <configuration name="CartRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shopping-cart-service" />
       <extension name="coverage">
@@ -213,7 +209,7 @@
       <workItem from="1732449127793" duration="4476000" />
       <workItem from="1732464654053" duration="151000" />
       <workItem from="1732464811897" duration="36205000" />
-      <workItem from="1732622328185" duration="14569000" />
+      <workItem from="1732622328185" duration="20468000" />
     </task>
     <servers />
   </component>

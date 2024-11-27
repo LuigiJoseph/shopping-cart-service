@@ -12,7 +12,6 @@ public class ShoppingCart {
     private Long id;
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    @JoinColumn(name = "shopping_cart_id") // Foreign key in Product table
     private Set<Product> products = new HashSet<>();
 
     public ShoppingCart() {

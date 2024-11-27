@@ -3,17 +3,20 @@ package org.luigijoseph.shoppingcartservice.domain.services.Implementations;
 import org.luigijoseph.shoppingcartservice.domain.entities.Product;
 import org.luigijoseph.shoppingcartservice.domain.entities.ShoppingCart;
 import org.luigijoseph.shoppingcartservice.domain.entities.Store;
+import org.luigijoseph.shoppingcartservice.domain.exceptions.ProductNotFoundException;
 import org.luigijoseph.shoppingcartservice.domain.services.ShoppingCartInterface;
 import org.springframework.stereotype.Service;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Service
 public class ShoppingCartImpl implements ShoppingCartInterface {
 
     private final ShoppingCart cart;
     private final Store store;
-
+    private final Set<Product> productsInCart = new HashSet<>(); // Assuming a cart maintains a set of products
 
     public ShoppingCartImpl(Store store) {
         this.cart = new ShoppingCart();
@@ -65,7 +68,17 @@ public class ShoppingCartImpl implements ShoppingCartInterface {
         cart.removeAllProducts();
     }
 
-    public Product searchProductById(Long productId);
-
-    public List<Product> searchProductsByName(String keyword);
+    @Override
+    public Product searchProductById(Long productId) {
+        return productsInCart.stream()
+                .filter(product -> product.getId().equals(productId))
+                .findFirst()
+                .orElseThrow(() -> new ProductNotFoundException("Product with ID " + productId + " not found in the cart."));
+    }
+    @Override
+    public List<Product> searchProductsByName(String keyword) {
+        return productsInCart.stream()
+                .filter(product -> product.getName().toLowerCase().contains(keyword.toLowerCase()))
+                .toList();
+    }
 }

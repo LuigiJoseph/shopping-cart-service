@@ -1,6 +1,9 @@
 package org.luigijoseph.shoppingcartservice.domain.entities;
 
+import jakarta.annotation.PostConstruct;
 import jakarta.persistence.*;
+import org.luigijoseph.shoppingcartservice.domain.repository.StoreRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -14,7 +17,6 @@ public class Store {
     private Long id;
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name = "store_id")
     private List<Product> products = new ArrayList<>();
 
     // Default constructor for JPA
@@ -112,4 +114,7 @@ public class Store {
     public String toString() {
         return "Store{id=" + id + ", products=" + products + "}";
     }
+
+
+
 }
